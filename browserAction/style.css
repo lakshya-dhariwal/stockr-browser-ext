@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  height: 70rem;
+  width: 22rem;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto mono', sans-serif;
+
+ 
+   background: -webkit-linear-gradient(to bottom, #D9E6FF, #003153);  /*Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to bottom, #D9E6FF, #003153);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0rem auto;
+  text-align: center;
+}
+.tag{
+  color: #023052;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  visibility: hidden;
+}
+.gallery{
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 80vh;
+  width: 20rem;
+  margin-left: 0%;
+  margin-right: 0%;
+  border: solid 1px  #003153;
+  
+}
+.stock{
+  /* border: solid 1px black;
+  border-radius: 5px; */
+  width: 15rem;
+  height: 10rem;
+  margin: 0.5rem;
+  padding: 5px;
+ 
+  /* glass morphisim background */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.stock h3{
+  margin-top:7px ;
+}
+.stock h4{
+  margin-top:7px ;
+}
+.searchBtn{
+  cursor: pointer;
+  border: none;
+  background-color: royalblue;
+  color:white;
+  padding: 0.5rem;
+  width: 4rem;
+  height: 3rem;
+}
+.searchBtn:hover{
+  background-color: #4c2db3;
+}
+input{
+  height: 3rem;
+  width:15rem ;
+  font-size: 2rem;
+  color: #023052;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px #325ef0;
+}
+.searchForm{
+  display: flex;
+  
+  justify-content: center;
+}
+h1{
+  color:#325ef0;
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin: 1rem; 
+  font-size: 2rem; 
+  margin-bottom: 00.5rem;
+}
+h1 span{
+  color:#4c2db3;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#searchExample{
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  color: grey;
+  font-size: 00.75rem;
+}
+h2{
+  color: #023052;
+  margin-top: 10px;
+}
+h3{
+  color :#4c2db3; 
+}
+h3 span{
+
+  color: royalblue;
+}
+h4{
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+.gallery{
+  display: grid;
+}
+
+
+
+.gain{
+  color: rgb(88, 199, 97);
+}
+.loss{
+  color: rgb(255, 82, 82);
+}
+.alert{
+  color:#023052;
+  background-color: rgb(255, 82, 82);
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  margin: 0.5rem 0rem;
+  visibility: hidden;
+
+}
+.hidden{
+  visibility: visible;
+
+}
+.x{
+  border: none;
+  cursor: pointer;
+  background-color: rgb(226, 81, 110);
+  margin-left: 13rem;
+  color:#ffffff;
+  padding: 2px;
+  border-radius: 30%;
+
+  
+ 
+  
+  font-weight: 500;
+}
