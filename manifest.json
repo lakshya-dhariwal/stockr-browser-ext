@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Stockr",
+  "description": "Stock and Crypto prices at a glance",
+  "version": "1.0.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "browserAction/background_script.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.mozilla.org/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "browserAction/index.html",
+    "default_title": "Stockr"
+  },"permissions":["storage","webRequest"]
+}
